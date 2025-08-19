@@ -12,7 +12,7 @@ RUN npm install -g pnpm
 
 # The pnpm install command now runs with all files in place.
 # pnpm will cache dependencies, so it should still be efficient.
-RUN pnpm install
+RUN pnpm install --no-frozen-lockfile
 
 # The build command now has access to all source files
 RUN pnpm run build
