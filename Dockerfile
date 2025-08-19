@@ -12,4 +12,5 @@ RUN pnpm run build
 
 EXPOSE 8080
 
-CMD ["node", "server.js"]
+CMD ["pnpm", "run", "preview"]
+
